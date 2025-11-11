@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+npm-debug.log
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# credenciais locais
+cypress.env.json
+.env
