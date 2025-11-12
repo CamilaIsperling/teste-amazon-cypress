@@ -63,21 +63,18 @@ npx cypress run --browser chrome
 Um exemplo de organização sugerida (pode variar conforme seu repositório):
 
 ```
-.
-├─ cypress.config.{js,ts}        # Configuração principal do Cypress (baseUrl, viewport, reporter etc.)
+├─ cypress.config.{js,ts}        # Configuração principal do Cypress (baseUrl, viewport, reporter)
 ├─ cypress/
 │  ├─ e2e/
 │  │  ├─ amazon/
-│  │  │  ├─ busca.cy.js          # Cenários de busca: 'celular', 'notebook' e validações de resultado/sugestão
-│  │  │  └─ carrinho.cy.js       # Fluxo: busca 'mouse gamer', rolagem controlada e adicionar ao carrinho
+│  │  │  ├─ busca.cy.js           
+│  │  │  └─ carrinho.cy.js      
 │  │  └─ README.md               # (opcional) notas específicas dos testes E2E
 │  ├─ fixtures/                  # Mocks de dados (JSON) usados nos testes
 │  ├─ support/
 │  │  ├─ commands.js             # Comandos customizados: ex. login(), getBySel(), etc.
 │  │  └─ e2e.js                  # Hooks globais, imports e configurações por teste
-│  └─ downloads/                 # (opcional) saída de downloads durante os testes
 ├─ reports/                      # (opcional) relatórios HTML/JUnit/Mochawesome
-├─ .github/workflows/            # (opcional) pipelines de CI (GitHub Actions)
 ├─ package.json
 └─ README.md
 ```
@@ -119,4 +116,8 @@ module.exports = defineConfig({
   },
   video: true,
 });
+```
+
+```bash
+npm install cypress --save-dev
 ```
