@@ -66,9 +66,9 @@ Um exemplo de organização sugerida (pode variar conforme seu repositório):
 ├─ cypress.config.{js,ts}        # Configuração principal do Cypress (baseUrl, viewport, reporter)
 ├─ cypress/
 │  ├─ e2e/
-│  │  ├─ amazon/
 │  │  │  ├─ busca.cy.js           
-│  │  │  └─ carrinho.cy.js      
+│  │  │  └─ carrinho.cy.js     
+│  │  │  └─ navegacao.cy.js     
 │  │  └─ README.md               # (opcional) notas específicas dos testes E2E
 │  ├─ fixtures/                  # Mocks de dados (JSON) usados nos testes
 │  ├─ support/
