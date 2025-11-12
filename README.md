@@ -66,9 +66,9 @@ Um exemplo de organização sugerida (pode variar conforme seu repositório):
 ├─ cypress.config.{js,ts}        # Configuração principal do Cypress (baseUrl, viewport, reporter)
 ├─ cypress/
 │  ├─ e2e/
-│  │  │  ├─ busca.cy.js           
-│  │  │  └─ carrinho.cy.js     
-│  │  │  └─ navegacao.cy.js     
+│  │  │  ├─ busca.cy.js
+│  │  │  └─ carrinho.cy.js
+│  │  │  └─ navegacao.cy.js
 │  │  └─ README.md               # (opcional) notas específicas dos testes E2E
 │  ├─ fixtures/                  # Mocks de dados (JSON) usados nos testes
 │  ├─ support/
@@ -105,19 +105,9 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "https://www.amazon.com.br",
-    viewportWidth: 1366,
-    viewportHeight: 768,
-    defaultCommandTimeout: 10000,
-    setupNodeEvents(on, config) {
-      // plugins / reporters aqui se necessário
-      return config;
-    },
+    baseUrl: "https://www.amazon.com.br"
+    }
   },
   video: true,
 });
-```
-
-```bash
-npm install cypress --save-dev
 ```
