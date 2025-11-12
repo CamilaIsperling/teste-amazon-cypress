@@ -122,8 +122,3 @@ module.exports = defineConfig({
 ```
 ---
 ## Relatórios
-
-Intale
-```bash
-npm i -D mochawesome mochawesome-merge mochawesome-report-generator
-```
