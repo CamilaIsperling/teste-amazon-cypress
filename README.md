@@ -72,7 +72,7 @@ Um exemplo de organização sugerida (pode variar conforme seu repositório):
 │  │  └─ README.md               # (opcional) notas específicas dos testes E2E
 │  ├─ fixtures/                  # Mocks de dados (JSON) usados nos testes
 │  ├─ support/
-│  │  ├─ commands.js             # Comandos customizados: ex. login(), getBySel(), etc.
+│  │  ├─ commands.js             # Comandos customizados: ex. login()
 │  │  └─ e2e.js                  # Hooks globais, imports e configurações por teste
 ├─ reports/                      # (opcional) relatórios HTML/JUnit/Mochawesome
 ├─ package.json
